@@ -69,7 +69,7 @@ public abstract class DaoDefaultImpl<E, U> implements Dao<E, U> {
         }
     }
 
-    private List<E> executeQueryStatement(PreparedStatement stm) {
+    protected List<E> executeQueryStatement(PreparedStatement stm) {
         List<E> entities = new ArrayList<>();
         try {
             ResultSet rs = stm.executeQuery();

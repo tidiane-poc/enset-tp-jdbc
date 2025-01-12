@@ -8,6 +8,10 @@ public class JdbcConnection {
     private static final String USERNAME = "user";
     private static final String PASSWORD = "NO_PASSWORD";
 
+    // private constructor to prevent instantiation
+    private JdbcConnection() {
+    }
+
     // static statement block is executed when the class is loaded into memory
     static {
         try {
